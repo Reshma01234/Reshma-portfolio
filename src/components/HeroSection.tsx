@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Download, ArrowDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -12,28 +13,52 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-4xl">
           {/* Name */}
-          <div className="animate-fade-up">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
             <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-6">
               Welcome to my portfolio
             </span>
-          </div>
+          </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight mb-4 animate-fade-up-delay-1">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl md:text-7xl font-bold font-display tracking-tight mb-4"
+          >
             Reshma <span className="text-gradient">Mamidi</span>
-          </h1>
+          </motion.h1>
           
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground font-medium mb-6 animate-fade-up-delay-2">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-lg md:text-xl text-muted-foreground font-medium mb-6"
+          >
             AI & Full-Stack Developer | CSE (AI & ML) Student | Cloud & Salesforce Certified
-          </p>
+          </motion.p>
           
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-10 max-w-3xl animate-fade-up-delay-3">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-10 max-w-3xl"
+          >
             Building intelligent, scalable, and user-focused applications using AI, cloud, and modern web technologies.
-          </p>
+          </motion.p>
           
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 animate-fade-up-delay-3">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex flex-wrap gap-4"
+          >
             <Button variant="hero" size="xl" asChild>
               <a href="#projects">
                 View Projects
@@ -61,14 +86,19 @@ const HeroSection = () => {
                 Resume
               </a>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+      >
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
-      </div>
+      </motion.div>
     </section>
   );
 };
