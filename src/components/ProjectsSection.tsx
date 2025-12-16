@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const projects = [
   {
@@ -35,25 +36,33 @@ const ProjectsSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-4">
-            Featured Work
-          </span>
+          <ScrollReveal>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-4">
+              Featured Work
+            </span>
+          </ScrollReveal>
           
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
-            Projects
-          </h2>
+          <ScrollReveal delay={0.1}>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
+              Projects
+            </h2>
+          </ScrollReveal>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real-world applications showcasing my expertise in AI, machine learning, 
-            and full-stack development.
-          </p>
+          <ScrollReveal delay={0.2}>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real-world applications showcasing my expertise in AI, machine learning, 
+              and full-stack development.
+            </p>
+          </ScrollReveal>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto" staggerDelay={0.15}>
           {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <StaggerItem key={index}>
+              <ProjectCard {...project} />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
