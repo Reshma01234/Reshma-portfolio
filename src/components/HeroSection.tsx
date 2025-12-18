@@ -67,25 +67,31 @@ const HeroSection = () => {
             </Button>
             
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Reshma01234" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-1 h-5 w-5" />
                 GitHub
               </a>
             </Button>
             
             <Button variant="outline" size="xl" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/reshma-mamidi-94b11125a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-1 h-5 w-5" />
                 LinkedIn
               </a>
             </Button>
             
-            <Button variant="secondary" size="xl" asChild>
-              <a href="#" download>
-                <Download className="mr-1 h-5 w-5" />
-                Resume
-              </a>
-            </Button>
+              <Button variant="secondary" size="xl" asChild>
+                <a
+                  href="/Reshma_Mamidi_Resume.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-1 h-5 w-5" />
+                  Resume
+                </a>
+              </Button>
+
           </motion.div>
         </div>
       </div>

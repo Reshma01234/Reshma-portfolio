@@ -12,7 +12,7 @@ const projects = [
       "Improved security monitoring by automating suspicious activity detection",
     ],
     technologies: ["Python", "Keras", "OpenCV", "CNN"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Reshma01234/Detect-Shop-Lifting",
   },
   {
     title: "AI Mock Interview Web Application",
@@ -24,8 +24,8 @@ const projects = [
       "Integrated open-source language models using Django to enhance interview preparation",
     ],
     technologies: ["HTML", "CSS", "JavaScript", "Python", "Django", "GitHub Models API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/Reshma01234/ai-mock-interview-webapp",
+
   },
 ];
 

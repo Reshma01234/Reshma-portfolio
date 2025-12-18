@@ -63,7 +63,7 @@ const ProjectCard = ({
       <div className="flex flex-wrap gap-3">
         {githubUrl && (
           <Button variant="default" size="default" asChild>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Reshma01234/Detect-Shop-Lifting" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
               View on GitHub
             </a>

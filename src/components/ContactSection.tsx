@@ -3,11 +3,11 @@ import { Mail, Github, Linkedin, Code2, Trophy } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const contactLinks = [
-  { icon: Mail, label: "Email", href: "mailto:example@email.com", value: "example@email.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com", value: "github.com/reshma" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", value: "linkedin.com/in/reshma" },
-  { icon: Code2, label: "HackerRank", href: "https://hackerrank.com", value: "hackerrank.com/reshma" },
-  { icon: Trophy, label: "LeetCode", href: "https://leetcode.com", value: "leetcode.com/reshma" },
+  { icon: Mail, label: "Email", href: "reshmamamidi28@gmail.com ", value: "reshmamamidi28@gmail.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Reshma01234", value: "github.com/reshma" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/reshma-mamidi-94b11125as", value: "linkedin.com/in/reshma" },
+  { icon: Code2, label: "HackerRank", href: "https://www.hackerrank.com/profile/reshmamamidi28", value: "hackerrank.com/reshma" },
+  { icon: Trophy, label: "LeetCode", href: "https://leetcode.com/u/Reshma_Mamidi/", value: "leetcode.com/reshma" },
 ];
 
 const ContactSection = () => {
@@ -59,7 +59,7 @@ const ContactSection = () => {
           {/* CTA */}
           <ScrollReveal delay={0.3}>
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:example@email.com">
+              <a href="reshmamamidi28@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Send Me a Message
               </a>
